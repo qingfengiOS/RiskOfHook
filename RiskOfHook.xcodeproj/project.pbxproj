@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD6D4AD920F5EE11006911EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D4AD820F5EE11006911EF /* AppDelegate.m */; };
+		FD6D4ADF20F5EE11006911EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6D4ADD20F5EE11006911EF /* Main.storyboard */; };
+		FD6D4AE120F5EE11006911EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6D4AE020F5EE11006911EF /* Assets.xcassets */; };
+		FD6D4AE420F5EE11006911EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6D4AE220F5EE11006911EF /* LaunchScreen.storyboard */; };
+		FD6D4AE720F5EE11006911EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D4AE620F5EE11006911EF /* main.m */; };
+		FD6D4AF120F5EE11006911EF /* RiskOfHookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D4AF020F5EE11006911EF /* RiskOfHookTests.m */; };
+		FD6D4AFC20F5EE11006911EF /* RiskOfHookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D4AFB20F5EE11006911EF /* RiskOfHookUITests.m */; };
+		FD6D4B1320F5EE25006911EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D4B0C20F5EE25006911EF /* ViewController.m */; };
+		FD6D4B1420F5EE25006911EF /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D4B0E20F5EE25006911EF /* Student.m */; };
+		FD6D4B1520F5EE25006911EF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D4B0F20F5EE25006911EF /* Person.m */; };
+		FD6D4B1620F5EE25006911EF /* Person+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D4B1020F5EE25006911EF /* Person+Swizzle.m */; };
+		FD6D4B1720F5EE25006911EF /* Student+swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6D4B1120F5EE25006911EF /* Student+swizzle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD6D4AED20F5EE11006911EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD6D4ACC20F5EE11006911EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD6D4AD320F5EE11006911EF;
+			remoteInfo = RiskOfHook;
+		};
+		FD6D4AF820F5EE11006911EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD6D4ACC20F5EE11006911EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD6D4AD320F5EE11006911EF;
+			remoteInfo = RiskOfHook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD6D4AD420F5EE11006911EF /* RiskOfHook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiskOfHook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6D4AD720F5EE11006911EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FD6D4AD820F5EE11006911EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FD6D4ADE20F5EE11006911EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD6D4AE020F5EE11006911EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD6D4AE320F5EE11006911EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD6D4AE520F5EE11006911EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD6D4AE620F5EE11006911EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD6D4AEC20F5EE11006911EF /* RiskOfHookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiskOfHookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6D4AF020F5EE11006911EF /* RiskOfHookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RiskOfHookTests.m; sourceTree = "<group>"; };
+		FD6D4AF220F5EE11006911EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD6D4AF720F5EE11006911EF /* RiskOfHookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiskOfHookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6D4AFB20F5EE11006911EF /* RiskOfHookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RiskOfHookUITests.m; sourceTree = "<group>"; };
+		FD6D4AFD20F5EE11006911EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD6D4B0920F5EE25006911EF /* Person+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+Swizzle.h"; sourceTree = "<group>"; };
+		FD6D4B0A20F5EE25006911EF /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		FD6D4B0B20F5EE25006911EF /* Student+swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+swizzle.h"; sourceTree = "<group>"; };
+		FD6D4B0C20F5EE25006911EF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FD6D4B0D20F5EE25006911EF /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		FD6D4B0E20F5EE25006911EF /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		FD6D4B0F20F5EE25006911EF /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		FD6D4B1020F5EE25006911EF /* Person+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+Swizzle.m"; sourceTree = "<group>"; };
+		FD6D4B1120F5EE25006911EF /* Student+swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+swizzle.m"; sourceTree = "<group>"; };
+		FD6D4B1220F5EE25006911EF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD6D4AD120F5EE11006911EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6D4AE920F5EE11006911EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6D4AF420F5EE11006911EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD6D4ACB20F5EE11006911EF = {
+			isa = PBXGroup;
+			children = (
+				FD6D4AD620F5EE11006911EF /* RiskOfHook */,
+				FD6D4AEF20F5EE11006911EF /* RiskOfHookTests */,
+				FD6D4AFA20F5EE11006911EF /* RiskOfHookUITests */,
+				FD6D4AD520F5EE11006911EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD6D4AD520F5EE11006911EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD6D4AD420F5EE11006911EF /* RiskOfHook.app */,
+				FD6D4AEC20F5EE11006911EF /* RiskOfHookTests.xctest */,
+				FD6D4AF720F5EE11006911EF /* RiskOfHookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD6D4AD620F5EE11006911EF /* RiskOfHook */ = {
+			isa = PBXGroup;
+			children = (
+				FD6D4AD720F5EE11006911EF /* AppDelegate.h */,
+				FD6D4AD820F5EE11006911EF /* AppDelegate.m */,
+				FD6D4B0D20F5EE25006911EF /* Person.h */,
+				FD6D4B0F20F5EE25006911EF /* Person.m */,
+				FD6D4B0920F5EE25006911EF /* Person+Swizzle.h */,
+				FD6D4B1020F5EE25006911EF /* Person+Swizzle.m */,
+				FD6D4B0A20F5EE25006911EF /* Student.h */,
+				FD6D4B0E20F5EE25006911EF /* Student.m */,
+				FD6D4B0B20F5EE25006911EF /* Student+swizzle.h */,
+				FD6D4B1120F5EE25006911EF /* Student+swizzle.m */,
+				FD6D4B1220F5EE25006911EF /* ViewController.h */,
+				FD6D4B0C20F5EE25006911EF /* ViewController.m */,
+				FD6D4ADD20F5EE11006911EF /* Main.storyboard */,
+				FD6D4AE020F5EE11006911EF /* Assets.xcassets */,
+				FD6D4AE220F5EE11006911EF /* LaunchScreen.storyboard */,
+				FD6D4AE520F5EE11006911EF /* Info.plist */,
+				FD6D4AE620F5EE11006911EF /* main.m */,
+			);
+			path = RiskOfHook;
+			sourceTree = "<group>";
+		};
+		FD6D4AEF20F5EE11006911EF /* RiskOfHookTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD6D4AF020F5EE11006911EF /* RiskOfHookTests.m */,
+				FD6D4AF220F5EE11006911EF /* Info.plist */,
+			);
+			path = RiskOfHookTests;
+			sourceTree = "<group>";
+		};
+		FD6D4AFA20F5EE11006911EF /* RiskOfHookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD6D4AFB20F5EE11006911EF /* RiskOfHookUITests.m */,
+				FD6D4AFD20F5EE11006911EF /* Info.plist */,
+			);
+			path = RiskOfHookUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD6D4AD320F5EE11006911EF /* RiskOfHook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6D4B0020F5EE11006911EF /* Build configuration list for PBXNativeTarget "RiskOfHook" */;
+			buildPhases = (
+				FD6D4AD020F5EE11006911EF /* Sources */,
+				FD6D4AD120F5EE11006911EF /* Frameworks */,
+				FD6D4AD220F5EE11006911EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RiskOfHook;
+			productName = RiskOfHook;
+			productReference = FD6D4AD420F5EE11006911EF /* RiskOfHook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD6D4AEB20F5EE11006911EF /* RiskOfHookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6D4B0320F5EE11006911EF /* Build configuration list for PBXNativeTarget "RiskOfHookTests" */;
+			buildPhases = (
+				FD6D4AE820F5EE11006911EF /* Sources */,
+				FD6D4AE920F5EE11006911EF /* Frameworks */,
+				FD6D4AEA20F5EE11006911EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD6D4AEE20F5EE11006911EF /* PBXTargetDependency */,
+			);
+			name = RiskOfHookTests;
+			productName = RiskOfHookTests;
+			productReference = FD6D4AEC20F5EE11006911EF /* RiskOfHookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD6D4AF620F5EE11006911EF /* RiskOfHookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6D4B0620F5EE11006911EF /* Build configuration list for PBXNativeTarget "RiskOfHookUITests" */;
+			buildPhases = (
+				FD6D4AF320F5EE11006911EF /* Sources */,
+				FD6D4AF420F5EE11006911EF /* Frameworks */,
+				FD6D4AF520F5EE11006911EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD6D4AF920F5EE11006911EF /* PBXTargetDependency */,
+			);
+			name = RiskOfHookUITests;
+			productName = RiskOfHookUITests;
+			productReference = FD6D4AF720F5EE11006911EF /* RiskOfHookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD6D4ACC20F5EE11006911EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = qingfengiOS;
+				TargetAttributes = {
+					FD6D4AD320F5EE11006911EF = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					FD6D4AEB20F5EE11006911EF = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = FD6D4AD320F5EE11006911EF;
+					};
+					FD6D4AF620F5EE11006911EF = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = FD6D4AD320F5EE11006911EF;
+					};
+				};
+			};
+			buildConfigurationList = FD6D4ACF20F5EE11006911EF /* Build configuration list for PBXProject "RiskOfHook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD6D4ACB20F5EE11006911EF;
+			productRefGroup = FD6D4AD520F5EE11006911EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD6D4AD320F5EE11006911EF /* RiskOfHook */,
+				FD6D4AEB20F5EE11006911EF /* RiskOfHookTests */,
+				FD6D4AF620F5EE11006911EF /* RiskOfHookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD6D4AD220F5EE11006911EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6D4AE420F5EE11006911EF /* LaunchScreen.storyboard in Resources */,
+				FD6D4AE120F5EE11006911EF /* Assets.xcassets in Resources */,
+				FD6D4ADF20F5EE11006911EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6D4AEA20F5EE11006911EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6D4AF520F5EE11006911EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD6D4AD020F5EE11006911EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6D4B1320F5EE25006911EF /* ViewController.m in Sources */,
+				FD6D4AE720F5EE11006911EF /* main.m in Sources */,
+				FD6D4B1720F5EE25006911EF /* Student+swizzle.m in Sources */,
+				FD6D4B1520F5EE25006911EF /* Person.m in Sources */,
+				FD6D4AD920F5EE11006911EF /* AppDelegate.m in Sources */,
+				FD6D4B1420F5EE25006911EF /* Student.m in Sources */,
+				FD6D4B1620F5EE25006911EF /* Person+Swizzle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6D4AE820F5EE11006911EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6D4AF120F5EE11006911EF /* RiskOfHookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6D4AF320F5EE11006911EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6D4AFC20F5EE11006911EF /* RiskOfHookUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD6D4AEE20F5EE11006911EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD6D4AD320F5EE11006911EF /* RiskOfHook */;
+			targetProxy = FD6D4AED20F5EE11006911EF /* PBXContainerItemProxy */;
+		};
+		FD6D4AF920F5EE11006911EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD6D4AD320F5EE11006911EF /* RiskOfHook */;
+			targetProxy = FD6D4AF820F5EE11006911EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD6D4ADD20F5EE11006911EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD6D4ADE20F5EE11006911EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD6D4AE220F5EE11006911EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD6D4AE320F5EE11006911EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD6D4AFE20F5EE11006911EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FD6D4AFF20F5EE11006911EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD6D4B0120F5EE11006911EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DZK6T3AW3W;
+				INFOPLIST_FILE = RiskOfHook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanglv51.www.RiskOfHook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD6D4B0220F5EE11006911EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DZK6T3AW3W;
+				INFOPLIST_FILE = RiskOfHook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanglv51.www.RiskOfHook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD6D4B0420F5EE11006911EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DZK6T3AW3W;
+				INFOPLIST_FILE = RiskOfHookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanglv51.www.RiskOfHookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RiskOfHook.app/RiskOfHook";
+			};
+			name = Debug;
+		};
+		FD6D4B0520F5EE11006911EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DZK6T3AW3W;
+				INFOPLIST_FILE = RiskOfHookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanglv51.www.RiskOfHookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RiskOfHook.app/RiskOfHook";
+			};
+			name = Release;
+		};
+		FD6D4B0720F5EE11006911EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DZK6T3AW3W;
+				INFOPLIST_FILE = RiskOfHookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanglv51.www.RiskOfHookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RiskOfHook;
+			};
+			name = Debug;
+		};
+		FD6D4B0820F5EE11006911EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DZK6T3AW3W;
+				INFOPLIST_FILE = RiskOfHookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanglv51.www.RiskOfHookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RiskOfHook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD6D4ACF20F5EE11006911EF /* Build configuration list for PBXProject "RiskOfHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6D4AFE20F5EE11006911EF /* Debug */,
+				FD6D4AFF20F5EE11006911EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD6D4B0020F5EE11006911EF /* Build configuration list for PBXNativeTarget "RiskOfHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6D4B0120F5EE11006911EF /* Debug */,
+				FD6D4B0220F5EE11006911EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD6D4B0320F5EE11006911EF /* Build configuration list for PBXNativeTarget "RiskOfHookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6D4B0420F5EE11006911EF /* Debug */,
+				FD6D4B0520F5EE11006911EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD6D4B0620F5EE11006911EF /* Build configuration list for PBXNativeTarget "RiskOfHookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6D4B0720F5EE11006911EF /* Debug */,
+				FD6D4B0820F5EE11006911EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD6D4ACC20F5EE11006911EF /* Project object */;
+}
